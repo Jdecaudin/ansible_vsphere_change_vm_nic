@@ -70,7 +70,7 @@ def main():
   for device in vm.config.hardware.device:
     if isinstance(device, vim.vm.device.VirtualEthernetCard):
       nicspec                         = vim.vm.device.VirtualDeviceSpec()
-      nicspec.operation               =  vim.vm.device.VirtualDeviceSpec.Operation.edit
+      nicspec.operation               = vim.vm.device.VirtualDeviceSpec.Operation.edit
       nicspec.device                  = device
       nicspec.device.wakeOnLanEnabled = True
 
