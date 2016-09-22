@@ -13,6 +13,7 @@ The VM needs to already have one (and only one) NIC.
 ## How to use
 
 Add this custom module to your Ansible library directory.
+Add a task like :
 
     - name: Change VM NIC
       vsphere_change_vm_nic:
